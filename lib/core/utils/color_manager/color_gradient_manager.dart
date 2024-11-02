@@ -16,13 +16,17 @@ class ColorGradientManager {
     ColorManager.purple,
     ColorManager.blue,
   ]);
+  static LinearGradient darkPinkGradient = LinearGradient(colors: [
+    ColorManager.darkPink.withOpacity(0.7),
+    ColorManager.darkPink,
+  ]);
   static LinearGradient silverGradient = LinearGradient(
-      begin: Alignment.topCenter,
-      end: Alignment.bottomCenter,
+      begin: Alignment.centerRight,
+      end: Alignment.centerLeft,
       colors: [
         ColorManager.grey,
         ColorManager.white,
-        ColorManager.grey.withOpacity(0.4),
+        ColorManager.darkGrey.withOpacity(0.4),
       ]);
   static LinearGradient darkPurpleDarkGreyGradient =
       const LinearGradient(colors: [

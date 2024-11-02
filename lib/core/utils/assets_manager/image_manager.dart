@@ -17,5 +17,7 @@ class ImageManager {
       'assets/images/pngs/war-game.png';
   static const String questionsGame =
       'assets/images/pngs/questions-game.png';
+  static const String gameBanner =
+      'assets/images/pngs/game-banner.png';
 
 }
