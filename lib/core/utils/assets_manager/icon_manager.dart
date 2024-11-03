@@ -7,5 +7,6 @@ class IconManager {
   static const String rankStar = 'assets/icons/rank-star.svg';
   static const String info = 'assets/icons/info.svg';
     static const String addMessage = 'assets/icons/add-message.svg';
+    static const String close = 'assets/icons/close.svg';
 
 }

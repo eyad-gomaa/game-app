@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:zone_game_app/core/utils/assets_manager/image_manager.dart';
 
-class ScafoldBackground extends StatelessWidget {
-  const ScafoldBackground({
+class ScaffoldBackground extends StatelessWidget {
+  const ScaffoldBackground({
     super.key,
     required this.child,
   });

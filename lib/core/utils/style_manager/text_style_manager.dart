@@ -34,4 +34,28 @@ class TextStyleManager {
     fontWeight: FontWeight.w700,
     color: ColorManager.white,
   );
+  static TextStyle style16RegBrown = TextStyle(
+    fontFamily: Keys.bukraFont,
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w400,
+    color: ColorManager.brown,
+  );
+  static TextStyle style16RegLightBlack = TextStyle(
+    fontFamily: Keys.bukraFont,
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w400,
+    color: ColorManager.lightBlack,
+  );
+  static TextStyle style24BoldBrown = TextStyle(
+    fontFamily: Keys.bukraFont,
+    fontSize: 24.sp,
+    fontWeight: FontWeight.w700,
+    color: ColorManager.brown,
+  );
+  static TextStyle style18BoldBrown = TextStyle(
+    fontFamily: Keys.bukraFont,
+    fontSize: 18.sp,
+    fontWeight: FontWeight.w700,
+    color: ColorManager.brown,
+  );
 }

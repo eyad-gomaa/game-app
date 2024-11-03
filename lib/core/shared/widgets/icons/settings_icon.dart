@@ -1,8 +1,11 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:zone_game_app/core/shared/widgets/scale_on_tap.dart';
 import 'package:zone_game_app/core/utils/assets_manager/icon_manager.dart';
+import 'package:zone_game_app/core/utils/navigation/navigation_context_extension.dart';
+import 'package:zone_game_app/core/utils/navigation/router_path.dart';
+
 class SettingsIcon extends StatelessWidget {
   const SettingsIcon({
     super.key,
@@ -10,6 +13,11 @@ class SettingsIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(child: SvgPicture.asset(IconManager.bill));
+    return ScaleOnTap(
+        onTap: () {
+                    context.pushNamed(RouterPath.settings);
+
+        },
+        child: SvgPicture.asset(IconManager.settings));
   }
 }
