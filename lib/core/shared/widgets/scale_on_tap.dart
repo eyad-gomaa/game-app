@@ -19,14 +19,14 @@ class _ScaleOnTapState extends State<ScaleOnTap>
     super.initState();
 
     _controller = AnimationController(
-      duration: const Duration(milliseconds: 500),
+      duration: const Duration(milliseconds: 200),
       vsync: this,
     );
 
     // Define the scale animation
     _scaleAnimation = TweenSequence([
-      TweenSequenceItem(tween: Tween(begin: 1.0, end: 1.15), weight: 10),
-      TweenSequenceItem(tween: Tween(begin: 1.15, end: 1.0), weight: 10),
+      TweenSequenceItem(tween: Tween(begin: 1.0, end: 1.15), weight: 50),
+      TweenSequenceItem(tween: Tween(begin: 1.15, end: 1.0), weight: 50),
     ]).animate(CurvedAnimation(
       parent: _controller,
       curve: Curves.easeInOut,

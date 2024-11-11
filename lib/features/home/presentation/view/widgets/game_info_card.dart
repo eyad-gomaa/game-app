@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
+import 'package:zone_game_app/core/shared/animations/repeating_scale_animation.dart';
 import 'package:zone_game_app/core/shared/widgets/scale_on_tap.dart';
-import 'package:zone_game_app/core/utils/assets_manager/icon_manager.dart';
-import 'package:zone_game_app/core/utils/assets_manager/image_manager.dart';
-import 'package:zone_game_app/core/utils/style_manager/text_style_manager.dart';
+import 'package:zone_game_app/core/utils/managers/assets_manager/icon_manager.dart';
+import 'package:zone_game_app/core/utils/managers/assets_manager/image_manager.dart';
+import 'package:zone_game_app/core/utils/managers/style_manager/text_style_manager.dart';
 
 class GameInfoCard extends StatefulWidget {
   const GameInfoCard({super.key});
@@ -105,34 +107,39 @@ class InfoTitle extends StatelessWidget {
           ),
           Positioned(
             left: 0,
-            child: Image.asset(
-              ImageManager.questionMark,
-              height: 120.h,
-              fit: BoxFit.cover,
+            child: RepeatingScaleAnimation(
+              child: Image.asset(
+                ImageManager.questionMark,
+                height: 120.h,
+                fit: BoxFit.cover,
+              ),
             ),
           ),
           Positioned(
             right: 0,
             bottom: 30.h,
-            child: Image.asset(
-              ImageManager.infoNote,
-              height: 80.h,
-              width: 80.h,
+            child: RepeatingScaleAnimation(
+              child: Image.asset(
+                ImageManager.infoNote,
+                height: 80.h,
+                width: 80.h,
+              ),
             ),
           ),
           Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Text(
-                  "إرشادات اللعبة",
-                  style: TextStyleManager.style24BoldBrown,
-                ),
-                Text(
-                  "تعرف على إرشادات اللعبة قبل البدء",
-                  style: TextStyleManager.style16RegBrown,
-                ),
-              ]),
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Text(
+                "إرشادات اللعبة",
+                style: TextStyleManager.style24BoldBrown,
+              ),
+              Text(
+                "تعرف على إرشادات اللعبة قبل البدء",
+                style: TextStyleManager.style16RegBrown,
+              ),
+            ],
+          ).animate().scale(duration: const Duration(milliseconds: 500)),
           Positioned(
             right: 20.h,
             top: 20.h,
@@ -172,7 +179,7 @@ class _InfoDataState extends State<InfoData> {
         Image.asset(
           ImageManager.infoImage,
           fit: BoxFit.cover,
-        ),
+        ).animate().scale(duration: const Duration(milliseconds: 600)),
         Gap(30.h),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 40),
@@ -182,13 +189,13 @@ class _InfoDataState extends State<InfoData> {
                 "هنا يكتب أول عنوان إرشادات ",
                 textAlign: TextAlign.center,
                 style: TextStyleManager.style18BoldBrown,
-              ),
+              ).animate().scale(duration: const Duration(milliseconds: 700)),
               Gap(16.h),
               Text(
                 "هنا يكتب نبذة تفصيلية لأول نقطة إرشادية للعبة ويجب قرائتها من اللاعب جيدا قبل البدأ باللعب لمعرفة قوانين اللعبة",
                 textAlign: TextAlign.center,
                 style: TextStyleManager.style16RegLightBlack,
-              ),
+              ).animate().scale(duration: const Duration(milliseconds: 800)),
             ],
           ),
         ),

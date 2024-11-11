@@ -1,5 +1,5 @@
-
 import 'package:flutter/material.dart';
+
 class GradientTextBorder extends StatelessWidget {
   final String text;
   final List<Color> gradientColors;
@@ -25,7 +25,6 @@ class GradientTextBorder extends StatelessWidget {
   }
 }
 
-
 class GradientTextBorderPainter extends CustomPainter {
   final String text;
   final TextStyle textStyle;
@@ -40,7 +39,7 @@ class GradientTextBorderPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
       ..style = PaintingStyle.stroke
-      ..strokeWidth = 1;
+      ..strokeWidth = 1.1;
     // Create a gradient for the stroke
     final shader = LinearGradient(
       colors: gradientColors,
@@ -75,4 +74,3 @@ class GradientTextBorderPainter extends CustomPainter {
   @override
   bool shouldRepaint(CustomPainter oldDelegate) => false;
 }
-

@@ -8,7 +8,11 @@ class SettingsView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: ScaffoldBackground(child: SettingsViewBody()),
+      body: ScaffoldBackground(
+        child: SafeArea(
+          child: SettingsViewBody(),
+        ),
+      ),
     );
   }
 }

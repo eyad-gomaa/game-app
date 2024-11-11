@@ -1,14 +1,18 @@
-
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:gap/gap.dart';
-import 'package:zone_game_app/core/utils/assets_manager/icon_manager.dart';
-import 'package:zone_game_app/core/utils/color_manager/color_gradient_manager.dart';
+import 'package:zone_game_app/core/shared/widgets/scale_on_tap.dart';
+import 'package:zone_game_app/core/utils/managers/assets_manager/icon_manager.dart';
+import 'package:zone_game_app/core/utils/managers/color_manager/color_gradient_manager.dart';
 import 'package:zone_game_app/core/utils/localization/localozation_manager.dart';
-import 'package:zone_game_app/core/utils/style_manager/text_style_manager.dart';
-import 'package:zone_game_app/features/home/presentation/view/widgets/home_cart_icon.dart';
+import 'package:zone_game_app/core/utils/managers/style_manager/text_style_manager.dart';
+import 'package:zone_game_app/core/utils/navigation/navigation_context_extension.dart';
+import 'package:zone_game_app/core/utils/navigation/router_path.dart';
+import 'package:zone_game_app/features/settings/presentation/manager/cubit/localization_cubit.dart';
+import 'package:zone_game_app/features/settings/presentation/manager/cubit/localization_state.dart';
+
 class CoinsCard extends StatelessWidget {
   const CoinsCard({
     super.key,
@@ -16,28 +20,27 @@ class CoinsCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.only(
-          right: LocalizationManager.isArabic() ? 13.w : 0,
-          left: LocalizationManager.isArabic() ? 0 : 13.w),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Stack(
+    return BlocBuilder<LocalizationCubit, LocalizationState>(
+      builder: (context, state) {
+        return Padding(
+          padding: EdgeInsets.only(
+              right: LocalizationManager.isArabic() ? 10.w : 0,
+              left: LocalizationManager.isArabic() ? 0 : 10.w),
+          child: Stack(
             alignment: LocalizationManager.isArabic()
                 ? Alignment.centerLeft
                 : Alignment.centerRight,
             clipBehavior: Clip.none,
             children: [
               Positioned(
-                left: LocalizationManager.isArabic() ? 13.w : null,
-                right: LocalizationManager.isArabic() ? null : 13.w,
+                left: LocalizationManager.isArabic() ? 10.w : null,
+                right: LocalizationManager.isArabic() ? null : 10.w,
                 child: Container(
                   padding: EdgeInsets.only(
-                      left: LocalizationManager.isArabic() ? 13.w + 9.w : 0,
+                      left: LocalizationManager.isArabic() ? 10.w + 9.w : 0,
                       right: LocalizationManager.isArabic()
                           ? 0
-                          : 13.w + 9.w), // width: 104.w,
+                          : 10.w + 9.w), // width: 104.w,
                   height: 36.h,
                   decoration: BoxDecoration(
                     gradient: ColorGradientManager.orangeGradient,
@@ -77,8 +80,10 @@ class CoinsCard extends StatelessWidget {
                   ),
                 ),
               ),
-              InkWell(
-                onTap: () {},
+              ScaleOnTap(
+                onTap: () {
+                  context.pushNamed(RouterPath.coinsStoreView);
+                },
                 child: SvgPicture.asset(
                   IconManager.plus,
                   width: 26.w,
@@ -87,10 +92,8 @@ class CoinsCard extends StatelessWidget {
               )
             ],
           ),
-          Gap(16.w),
-          const HomeCartIcon()
-        ],
-      ),
+        );
+      },
     );
   }
 }

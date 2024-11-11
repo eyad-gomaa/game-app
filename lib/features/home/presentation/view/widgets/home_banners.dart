@@ -1,10 +1,9 @@
-
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:gap/gap.dart';
-import 'package:zone_game_app/core/utils/assets_manager/image_manager.dart';
-import 'package:zone_game_app/core/utils/color_manager/color_manager.dart';
+import 'package:zone_game_app/core/utils/managers/assets_manager/image_manager.dart';
+import 'package:zone_game_app/core/utils/managers/color_manager/color_manager.dart';
+
 class HomeBanners extends StatefulWidget {
   const HomeBanners({
     super.key,
@@ -13,6 +12,7 @@ class HomeBanners extends StatefulWidget {
   @override
   State<HomeBanners> createState() => _HomeBannersState();
 }
+
 class _HomeBannersState extends State<HomeBanners> {
   int currentIndex = 0;
   @override
@@ -31,7 +31,7 @@ class _HomeBannersState extends State<HomeBanners> {
                 width: MediaQuery.sizeOf(context).width,
                 child: Image.asset(
                   b,
-                  fit: BoxFit.cover,
+                  fit: BoxFit.fill,
                 ),
               ),
             );
@@ -41,8 +41,8 @@ class _HomeBannersState extends State<HomeBanners> {
             enlargeFactor: 0.9,
             autoPlayAnimationDuration: const Duration(seconds: 1),
             enlargeCenterPage: true,
-            viewportFraction: 0.9,
-            height: 127,
+            viewportFraction: 1,
+            height: 200.h,
             onPageChanged: (index, reason) {
               setState(() {
                 currentIndex = index;
@@ -50,7 +50,6 @@ class _HomeBannersState extends State<HomeBanners> {
             },
           ),
         ),
-        Gap(12.h),
         SizedBox(
           height: 8.w,
           child: ListView.builder(

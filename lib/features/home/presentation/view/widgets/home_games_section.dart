@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:zone_game_app/core/utils/assets_manager/image_manager.dart';
-import 'package:zone_game_app/core/utils/size_manager/padding_manager.dart';
+import 'package:zone_game_app/core/utils/managers/assets_manager/image_manager.dart';
+import 'package:zone_game_app/core/utils/managers/size_manager/padding_manager.dart';
 import 'package:zone_game_app/features/home/presentation/view/widgets/home_game_card.dart';
+import 'package:zone_game_app/generated/l10n.dart';
 
 class HomeGames extends StatelessWidget {
   const HomeGames({
@@ -10,6 +11,7 @@ class HomeGames extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    S names = S.of(context);
     return Padding(
       padding: PaddingManager.horizontalPadding20,
       child: GridView.count(
@@ -22,42 +24,42 @@ class HomeGames extends StatelessWidget {
         children: [
           HomeGameCard(
             color: const Color(0xffFDF7E0),
-            text: 'سباق المرح',
+            text: names.sebakAlmarahGame,
             image: ImageManager.funRace,
             anmimationDelay: 100,
             onTap: () {},
           ),
           HomeGameCard(
             color: const Color(0xffBBB671),
-            text: 'لعبة الذاكرة',
+            text: names.zakeraGame,
             image: ImageManager.memoryGame,
             anmimationDelay: 200,
             onTap: () {},
           ),
           HomeGameCard(
             color: const Color(0xffB4D2E2),
-            text: 'كنز الإختلافات',
+            text: names.kenzAlekhtlafatGame,
             image: ImageManager.diffrenceGame,
             anmimationDelay: 300,
             onTap: () {},
           ),
           HomeGameCard(
             color: const Color(0xffFCC85D),
-            text: 'لعبة الفخ',
+            text: names.alfakhGame,
             image: ImageManager.trapGame,
             anmimationDelay: 400,
             onTap: () {},
           ),
           HomeGameCard(
             color: const Color(0xffC5B5A4),
-            text: "نداء الحرب",
+            text: names.nidaaAlharb,
             image: ImageManager.warGame,
             anmimationDelay: 500,
             onTap: () {},
           ),
           HomeGameCard(
             color: const Color(0xffE6DD72),
-            text: "سلسلة الأسئلة",
+            text: names.selselatAlasila,
             image: ImageManager.questionsGame,
             anmimationDelay: 600,
             onTap: () {},

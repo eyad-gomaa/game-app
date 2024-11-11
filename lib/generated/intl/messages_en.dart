@@ -21,5 +21,116 @@ class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'en';
 
   final messages = _notInlinedMessages(_notInlinedMessages);
-  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{};
+  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "DeleteAccountDescription": MessageLookupByLibrary.simpleMessage(
+            "If you want to delete your account permanently, write the reason for deletion."),
+        "accountPassword":
+            MessageLookupByLibrary.simpleMessage("Account password"),
+        "active": MessageLookupByLibrary.simpleMessage("Active"),
+        "addYourMessageDescription": MessageLookupByLibrary.simpleMessage(
+            "Send a paid text message that appears in the application interface"),
+        "addYourMessageTitle":
+            MessageLookupByLibrary.simpleMessage("Share your message"),
+        "alfakhGame": MessageLookupByLibrary.simpleMessage("Trap Game"),
+        "appLanguage": MessageLookupByLibrary.simpleMessage("App Language"),
+        "buy": MessageLookupByLibrary.simpleMessage("buy"),
+        "buyGold": MessageLookupByLibrary.simpleMessage("Buy Gold"),
+        "changeLanguage":
+            MessageLookupByLibrary.simpleMessage("Change Language"),
+        "changeLanguageDescription": MessageLookupByLibrary.simpleMessage(
+            "You can change the language of the application to suit you"),
+        "changePassword":
+            MessageLookupByLibrary.simpleMessage("Change Password"),
+        "chatNotifications":
+            MessageLookupByLibrary.simpleMessage("Chat Notifications"),
+        "confirmDeletion":
+            MessageLookupByLibrary.simpleMessage("Confirm deletion"),
+        "confirmPassword":
+            MessageLookupByLibrary.simpleMessage("Confirm password"),
+        "confirmPurchase":
+            MessageLookupByLibrary.simpleMessage("Confirm Purchase"),
+        "confirmPurchaseDescription": MessageLookupByLibrary.simpleMessage(
+            "Are you sure you want to buy the package?"),
+        "currentPassword":
+            MessageLookupByLibrary.simpleMessage("Current password"),
+        "deleteAccount": MessageLookupByLibrary.simpleMessage("Delete Account"),
+        "doNotDisturbDescription": MessageLookupByLibrary.simpleMessage(
+            "Hide game invites, chat room posts, and online friend notifications"),
+        "doNotDisturbTitle":
+            MessageLookupByLibrary.simpleMessage("Do Not Disturb"),
+        "editMyData": MessageLookupByLibrary.simpleMessage("Edit My Data"),
+        "emptyTextValidation":
+            MessageLookupByLibrary.simpleMessage("this field can\'t be empty"),
+        "enterReasonHere":
+            MessageLookupByLibrary.simpleMessage("Enter the reason here"),
+        "forgotPassword":
+            MessageLookupByLibrary.simpleMessage("Forgot password?"),
+        "friendNotifications":
+            MessageLookupByLibrary.simpleMessage("Friend Notifications"),
+        "gameNotifications":
+            MessageLookupByLibrary.simpleMessage("Game Notifications"),
+        "hideBirthdayDescription": MessageLookupByLibrary.simpleMessage(
+            "Others cannot see your birthday, but you can still receive birthday gifts from Zone"),
+        "hideBirthdayTitle":
+            MessageLookupByLibrary.simpleMessage("Hide Birthday"),
+        "hideNationalityDescription": MessageLookupByLibrary.simpleMessage(
+            "Make your nationality visible only to you"),
+        "hideNationalityTitle":
+            MessageLookupByLibrary.simpleMessage("Hide Nationality"),
+        "inactive": MessageLookupByLibrary.simpleMessage("Inactive"),
+        "inviteFriends": MessageLookupByLibrary.simpleMessage("Invite Friends"),
+        "inviteFriendsDescription": MessageLookupByLibrary.simpleMessage(
+            "Invite your friends and earn many gold coins"),
+        "kenzAlekhtlafatGame":
+            MessageLookupByLibrary.simpleMessage("Differences Treasure"),
+        "logout": MessageLookupByLibrary.simpleMessage("Log Out"),
+        "logoutConfirmation": MessageLookupByLibrary.simpleMessage(
+            "Do you want to log out of your account?"),
+        "messageCost": MessageLookupByLibrary.simpleMessage("Message Cost"),
+        "messageNotifications":
+            MessageLookupByLibrary.simpleMessage("Message Notifications"),
+        "myAccount": MessageLookupByLibrary.simpleMessage("My Account"),
+        "newPassword": MessageLookupByLibrary.simpleMessage("New password"),
+        "nidaaAlharb": MessageLookupByLibrary.simpleMessage("Call of War"),
+        "noTrackingDescription": MessageLookupByLibrary.simpleMessage(
+            "Do not allow your friends to follow you to the chat room, and you will also not be able to follow them to the chat room"),
+        "noTrackingTitle": MessageLookupByLibrary.simpleMessage("No Tracking"),
+        "noWatchingDescription": MessageLookupByLibrary.simpleMessage(
+            "Do not allow your friends to follow your games"),
+        "noWatchingTitle": MessageLookupByLibrary.simpleMessage("No Watching"),
+        "notificationControl":
+            MessageLookupByLibrary.simpleMessage("Notification control"),
+        "notificationControlDescription": MessageLookupByLibrary.simpleMessage(
+            "You can control many notifications"),
+        "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
+        "oneRyal": MessageLookupByLibrary.simpleMessage("Saudi Riyal"),
+        "password": MessageLookupByLibrary.simpleMessage("password"),
+        "privacyPolicies":
+            MessageLookupByLibrary.simpleMessage("Privacy Policy"),
+        "privacySettings":
+            MessageLookupByLibrary.simpleMessage("Privacy Settings"),
+        "save": MessageLookupByLibrary.simpleMessage("save"),
+        "sebakAlmarahGame": MessageLookupByLibrary.simpleMessage("Fun Race"),
+        "selselatAlasila":
+            MessageLookupByLibrary.simpleMessage("Question Series"),
+        "send": MessageLookupByLibrary.simpleMessage("send"),
+        "settings": MessageLookupByLibrary.simpleMessage("settings"),
+        "shareLink": MessageLookupByLibrary.simpleMessage("Share link"),
+        "stopFriendRequestsDescription": MessageLookupByLibrary.simpleMessage(
+            "You will not receive friend requests for the next 7 days"),
+        "stopFriendRequestsTitle":
+            MessageLookupByLibrary.simpleMessage("Stop Friend Requests"),
+        "store": MessageLookupByLibrary.simpleMessage("store"),
+        "termsAndConditions":
+            MessageLookupByLibrary.simpleMessage("Terms and Conditions"),
+        "walletNotifications":
+            MessageLookupByLibrary.simpleMessage("Wallet Notifications"),
+        "whyYouDeleteAccount": MessageLookupByLibrary.simpleMessage(
+            "Why are you deleting your account?"),
+        "writeYourMessage":
+            MessageLookupByLibrary.simpleMessage("Write Your Message"),
+        "yourInviteCode":
+            MessageLookupByLibrary.simpleMessage("Your Invite Code"),
+        "zakeraGame": MessageLookupByLibrary.simpleMessage("Memory Game")
+      };
 }

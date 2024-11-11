@@ -6,8 +6,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:zone_game_app/core/shared/widgets/inner_shadow.dart';
 import 'package:zone_game_app/core/shared/widgets/scale_on_tap.dart';
-import 'package:zone_game_app/core/utils/assets_manager/image_manager.dart';
-import 'package:zone_game_app/core/utils/style_manager/text_style_manager.dart';
+import 'package:zone_game_app/core/utils/managers/assets_manager/image_manager.dart';
+import 'package:zone_game_app/core/utils/managers/style_manager/text_style_manager.dart';
 import 'package:zone_game_app/features/home/presentation/view/widgets/gradient_text_border.dart';
 import 'package:zone_game_app/features/home/presentation/view/widgets/info_icon.dart';
 class HomeGameCard extends StatelessWidget {

@@ -1,10 +1,12 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:zone_game_app/core/utils/assets_manager/icon_manager.dart';
-import 'package:zone_game_app/core/utils/color_manager/color_manager.dart';
+import 'package:zone_game_app/core/utils/managers/assets_manager/icon_manager.dart';
+import 'package:zone_game_app/core/utils/managers/color_manager/color_manager.dart';
+import 'package:zone_game_app/core/utils/navigation/navigation_context_extension.dart';
+import 'package:zone_game_app/core/utils/navigation/router_path.dart';
+
 class HomeCartIcon extends StatelessWidget {
   const HomeCartIcon({
     super.key,
@@ -13,10 +15,11 @@ class HomeCartIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        context.pushNamed(RouterPath.gamesCardsStoreView);
+      },
       child: Container(
-        width: 40.w,
-        height: 40.w,
+        padding: EdgeInsets.all(5.w),
         decoration: BoxDecoration(
           color: ColorManager.darkGrey,
           borderRadius: BorderRadius.circular(50),

@@ -21,5 +21,114 @@ class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'ar';
 
   final messages = _notInlinedMessages(_notInlinedMessages);
-  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{};
+  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "DeleteAccountDescription": MessageLookupByLibrary.simpleMessage(
+            "إذا كنت تريد حذف حسابك نهائيا، قم بكتابة سبب الحذف"),
+        "accountPassword":
+            MessageLookupByLibrary.simpleMessage("الرقم السري للحساب"),
+        "active": MessageLookupByLibrary.simpleMessage("مفعلة"),
+        "addYourMessageDescription": MessageLookupByLibrary.simpleMessage(
+            "قم بإرسال رسالة نصية مدفوعة تظهر في واجهة التطبيق"),
+        "addYourMessageTitle":
+            MessageLookupByLibrary.simpleMessage("شارك برسالتك"),
+        "alfakhGame": MessageLookupByLibrary.simpleMessage("لعبة الفخ"),
+        "appLanguage": MessageLookupByLibrary.simpleMessage("لغة التطبيق"),
+        "buy": MessageLookupByLibrary.simpleMessage("شراء"),
+        "buyGold": MessageLookupByLibrary.simpleMessage("شراء الذهب"),
+        "changeLanguage": MessageLookupByLibrary.simpleMessage("تغيير اللغة"),
+        "changeLanguageDescription": MessageLookupByLibrary.simpleMessage(
+            "يمكنك تغيير لغة التطبيق بما يناسبك"),
+        "changePassword":
+            MessageLookupByLibrary.simpleMessage("تغيير الرقم السري"),
+        "chatNotifications":
+            MessageLookupByLibrary.simpleMessage("إشعارات الدردشات"),
+        "confirmDeletion": MessageLookupByLibrary.simpleMessage("تأكيد الحذف"),
+        "confirmPassword":
+            MessageLookupByLibrary.simpleMessage("تأكيد الرقم السري"),
+        "confirmPurchase": MessageLookupByLibrary.simpleMessage("تأكيد الشراء"),
+        "confirmPurchaseDescription": MessageLookupByLibrary.simpleMessage(
+            "هل أنت متأكد من شراء الباقة؟"),
+        "currentPassword":
+            MessageLookupByLibrary.simpleMessage("الرقم السري الحالي"),
+        "deleteAccount": MessageLookupByLibrary.simpleMessage("حذف الحساب"),
+        "doNotDisturbDescription": MessageLookupByLibrary.simpleMessage(
+            "إخفاء دعوات اللعبة، ومشاركات غرفة الدردشة، وإشعارات الأصدقاء المتصلين"),
+        "doNotDisturbTitle":
+            MessageLookupByLibrary.simpleMessage("عدم الإزعاج"),
+        "editMyData": MessageLookupByLibrary.simpleMessage("تعديل بياناتي"),
+        "emptyTextValidation": MessageLookupByLibrary.simpleMessage(
+            "لا يمكنك ترك هذا الحقل فارغاً"),
+        "enterReasonHere":
+            MessageLookupByLibrary.simpleMessage("اكتب السبب هنا"),
+        "forgotPassword":
+            MessageLookupByLibrary.simpleMessage("هل نسيت الرقم السري؟"),
+        "friendNotifications":
+            MessageLookupByLibrary.simpleMessage("إشعارات الأصدقاء"),
+        "gameNotifications":
+            MessageLookupByLibrary.simpleMessage("إشعارات الألعاب"),
+        "hideBirthdayDescription": MessageLookupByLibrary.simpleMessage(
+            "لا يستطيع الآخرون رؤية عيد ميلادك ولكن لا يزال بإمكانك تلقي هدايا عيد ميلاد من Zone"),
+        "hideBirthdayTitle":
+            MessageLookupByLibrary.simpleMessage("إخفاء عيد الميلاد"),
+        "hideNationalityDescription":
+            MessageLookupByLibrary.simpleMessage("اجعل جنسيتك مرئية لك فقط"),
+        "hideNationalityTitle":
+            MessageLookupByLibrary.simpleMessage("إخفاء الجنسية"),
+        "inactive": MessageLookupByLibrary.simpleMessage("معطلة"),
+        "inviteFriends": MessageLookupByLibrary.simpleMessage("دعوة الأصدقاء"),
+        "inviteFriendsDescription": MessageLookupByLibrary.simpleMessage(
+            "قم بدعوة أصدقائك، واكسب العديد من القطع الذهبية"),
+        "kenzAlekhtlafatGame":
+            MessageLookupByLibrary.simpleMessage("كنز الإختلافات"),
+        "logout": MessageLookupByLibrary.simpleMessage("تسجيل الخروج"),
+        "logoutConfirmation": MessageLookupByLibrary.simpleMessage(
+            "هل تريد تسجيل الخروج من حسابك؟"),
+        "messageCost": MessageLookupByLibrary.simpleMessage("تكلفة الرسالة"),
+        "messageNotifications":
+            MessageLookupByLibrary.simpleMessage("إشعارات الرسائل"),
+        "myAccount": MessageLookupByLibrary.simpleMessage("حسابي"),
+        "newPassword":
+            MessageLookupByLibrary.simpleMessage("الرقم السري الجديد"),
+        "nidaaAlharb": MessageLookupByLibrary.simpleMessage("نداء الحرب"),
+        "noTrackingDescription": MessageLookupByLibrary.simpleMessage(
+            "عدم السماح لأصدقائك بتتبعك إلى غرفة الدردشة، ولن يمكنك أيضاً تتبعهم إلى غرفة الدردشة"),
+        "noTrackingTitle": MessageLookupByLibrary.simpleMessage("عدم التتبع"),
+        "noWatchingDescription": MessageLookupByLibrary.simpleMessage(
+            "عدم السماح لأصدقائك بمتابعة ألعابك"),
+        "noWatchingTitle": MessageLookupByLibrary.simpleMessage("عدم المشاهدة"),
+        "notificationControl":
+            MessageLookupByLibrary.simpleMessage("التحكم بالإشعارات"),
+        "notificationControlDescription": MessageLookupByLibrary.simpleMessage(
+            "يمكنك التحكم بالعديد من الإشعارات"),
+        "notifications": MessageLookupByLibrary.simpleMessage("الإشعارات"),
+        "oneRyal": MessageLookupByLibrary.simpleMessage("ريال سعودي"),
+        "password": MessageLookupByLibrary.simpleMessage("الرقم السري"),
+        "privacyPolicies":
+            MessageLookupByLibrary.simpleMessage("سياسة الخصوصية"),
+        "privacySettings":
+            MessageLookupByLibrary.simpleMessage("إعدادات الخصوصية"),
+        "save": MessageLookupByLibrary.simpleMessage("حفظ"),
+        "sebakAlmarahGame": MessageLookupByLibrary.simpleMessage("سباق المرح"),
+        "selselatAlasila":
+            MessageLookupByLibrary.simpleMessage("سلسلة الأسئلة"),
+        "send": MessageLookupByLibrary.simpleMessage("إرسال"),
+        "settings": MessageLookupByLibrary.simpleMessage("الاعدادات"),
+        "shareLink": MessageLookupByLibrary.simpleMessage("مشاركة الرابط"),
+        "stopFriendRequestsDescription": MessageLookupByLibrary.simpleMessage(
+            "لن تتلقى طلبات صداقة لمدة 7 أيام من الآن"),
+        "stopFriendRequestsTitle":
+            MessageLookupByLibrary.simpleMessage("إيقاف طلبات الصداقة"),
+        "store": MessageLookupByLibrary.simpleMessage("المتجر"),
+        "termsAndConditions":
+            MessageLookupByLibrary.simpleMessage("الشروط والأحكام"),
+        "walletNotifications":
+            MessageLookupByLibrary.simpleMessage("إشعارات المحفظة"),
+        "whyYouDeleteAccount":
+            MessageLookupByLibrary.simpleMessage("ما سبب حذف حسابك؟"),
+        "writeYourMessage":
+            MessageLookupByLibrary.simpleMessage("قم بكتابة رسالتك"),
+        "yourInviteCode":
+            MessageLookupByLibrary.simpleMessage("كود الدعوة الخاص بك"),
+        "zakeraGame": MessageLookupByLibrary.simpleMessage("لعبة الذاكرة")
+      };
 }
