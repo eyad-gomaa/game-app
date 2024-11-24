@@ -66,7 +66,23 @@
     "chatNotifications": "إشعارات الدردشات",
     "messageNotifications": "إشعارات الرسائل",
     "yourInviteCode": "كود الدعوة الخاص بك",
-    "myAccount": "حسابي"
+    "myAccount": "حسابي",
+    "definition": "التعريف",
+    "wallet": "المحفظة",
+    "balance": "الرصيد",
+    "game": "اللعبة",
+    "total": "المجموع",
+    "totalWinProbability": "احتمال الفوز",
+    "subscriptions": "الاشتراكات",
+    "friends": "الأصدقاء",
+    "events": "الأحداث",
+    "achievements": "الإنجازات",
+    "tasks": "المهام",
+    "badges": "الشارات",
+    "rank": "الترتيب",
+    "superName": "سوبر",
+    "superLevel": "مستوى سوبر",
+    "gifts": "الهدايا"
 
 
 }

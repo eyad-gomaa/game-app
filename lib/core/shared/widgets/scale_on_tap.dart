@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 class ScaleOnTap extends StatefulWidget {
   final Widget child;
-  final void Function() onTap;
-  const ScaleOnTap({super.key, required this.child, required this.onTap});
+  final void Function()? onTap;
+  const ScaleOnTap({super.key, required this.child, this.onTap});
 
   @override
   State<ScaleOnTap> createState() => _ScaleOnTapState();
@@ -54,7 +54,7 @@ class _ScaleOnTapState extends State<ScaleOnTap>
 
       onTap: () {
         _handleTap();
-        widget.onTap();
+        widget.onTap!();
       },
       child: ScaleTransition(
         scale: _scaleAnimation,

@@ -126,6 +126,7 @@ class SettingsButtons extends StatelessWidget {
             );
           },
         ),
+        const Gap(32),
       ],
     );
   }

@@ -33,4 +33,6 @@ class ImageManager {
   static const String inviteFriend = 'assets/images/pngs/invite-friend.png';
   static const String profielBackground = 'assets/images/pngs/profile-background.png';
   static const String profielCover = 'assets/images/pngs/profile-cover.png';
+  static const String profileLevel = 'assets/images/pngs/profile-level.png';
+  static const String profileCardTitle = 'assets/images/pngs/profile-card-title.png';
 }

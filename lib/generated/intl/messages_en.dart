@@ -26,6 +26,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "If you want to delete your account permanently, write the reason for deletion."),
         "accountPassword":
             MessageLookupByLibrary.simpleMessage("Account password"),
+        "achievements": MessageLookupByLibrary.simpleMessage("Achievements"),
         "active": MessageLookupByLibrary.simpleMessage("Active"),
         "addYourMessageDescription": MessageLookupByLibrary.simpleMessage(
             "Send a paid text message that appears in the application interface"),
@@ -33,6 +34,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Share your message"),
         "alfakhGame": MessageLookupByLibrary.simpleMessage("Trap Game"),
         "appLanguage": MessageLookupByLibrary.simpleMessage("App Language"),
+        "badges": MessageLookupByLibrary.simpleMessage("Badges"),
+        "balance": MessageLookupByLibrary.simpleMessage("Balance"),
         "buy": MessageLookupByLibrary.simpleMessage("buy"),
         "buyGold": MessageLookupByLibrary.simpleMessage("Buy Gold"),
         "changeLanguage":
@@ -53,6 +56,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Are you sure you want to buy the package?"),
         "currentPassword":
             MessageLookupByLibrary.simpleMessage("Current password"),
+        "definition": MessageLookupByLibrary.simpleMessage("Definition"),
         "deleteAccount": MessageLookupByLibrary.simpleMessage("Delete Account"),
         "doNotDisturbDescription": MessageLookupByLibrary.simpleMessage(
             "Hide game invites, chat room posts, and online friend notifications"),
@@ -63,12 +67,16 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("this field can\'t be empty"),
         "enterReasonHere":
             MessageLookupByLibrary.simpleMessage("Enter the reason here"),
+        "events": MessageLookupByLibrary.simpleMessage("Events"),
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("Forgot password?"),
         "friendNotifications":
             MessageLookupByLibrary.simpleMessage("Friend Notifications"),
+        "friends": MessageLookupByLibrary.simpleMessage("Friends"),
+        "game": MessageLookupByLibrary.simpleMessage("Game"),
         "gameNotifications":
             MessageLookupByLibrary.simpleMessage("Game Notifications"),
+        "gifts": MessageLookupByLibrary.simpleMessage("Gifts"),
         "hideBirthdayDescription": MessageLookupByLibrary.simpleMessage(
             "Others cannot see your birthday, but you can still receive birthday gifts from Zone"),
         "hideBirthdayTitle":
@@ -109,6 +117,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Privacy Policy"),
         "privacySettings":
             MessageLookupByLibrary.simpleMessage("Privacy Settings"),
+        "rank": MessageLookupByLibrary.simpleMessage("Rank"),
         "save": MessageLookupByLibrary.simpleMessage("save"),
         "sebakAlmarahGame": MessageLookupByLibrary.simpleMessage("Fun Race"),
         "selselatAlasila":
@@ -121,8 +130,16 @@ class MessageLookup extends MessageLookupByLibrary {
         "stopFriendRequestsTitle":
             MessageLookupByLibrary.simpleMessage("Stop Friend Requests"),
         "store": MessageLookupByLibrary.simpleMessage("store"),
+        "subscriptions": MessageLookupByLibrary.simpleMessage("Subscriptions"),
+        "superLevel": MessageLookupByLibrary.simpleMessage("Super Level"),
+        "superName": MessageLookupByLibrary.simpleMessage("Super"),
+        "tasks": MessageLookupByLibrary.simpleMessage("Tasks"),
         "termsAndConditions":
             MessageLookupByLibrary.simpleMessage("Terms and Conditions"),
+        "total": MessageLookupByLibrary.simpleMessage("Total"),
+        "totalWinProbability":
+            MessageLookupByLibrary.simpleMessage("Total Win Probability"),
+        "wallet": MessageLookupByLibrary.simpleMessage("Wallet"),
         "walletNotifications":
             MessageLookupByLibrary.simpleMessage("Wallet Notifications"),
         "whyYouDeleteAccount": MessageLookupByLibrary.simpleMessage(

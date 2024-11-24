@@ -26,6 +26,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "إذا كنت تريد حذف حسابك نهائيا، قم بكتابة سبب الحذف"),
         "accountPassword":
             MessageLookupByLibrary.simpleMessage("الرقم السري للحساب"),
+        "achievements": MessageLookupByLibrary.simpleMessage("الإنجازات"),
         "active": MessageLookupByLibrary.simpleMessage("مفعلة"),
         "addYourMessageDescription": MessageLookupByLibrary.simpleMessage(
             "قم بإرسال رسالة نصية مدفوعة تظهر في واجهة التطبيق"),
@@ -33,6 +34,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("شارك برسالتك"),
         "alfakhGame": MessageLookupByLibrary.simpleMessage("لعبة الفخ"),
         "appLanguage": MessageLookupByLibrary.simpleMessage("لغة التطبيق"),
+        "badges": MessageLookupByLibrary.simpleMessage("الشارات"),
+        "balance": MessageLookupByLibrary.simpleMessage("الرصيد"),
         "buy": MessageLookupByLibrary.simpleMessage("شراء"),
         "buyGold": MessageLookupByLibrary.simpleMessage("شراء الذهب"),
         "changeLanguage": MessageLookupByLibrary.simpleMessage("تغيير اللغة"),
@@ -50,6 +53,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "هل أنت متأكد من شراء الباقة؟"),
         "currentPassword":
             MessageLookupByLibrary.simpleMessage("الرقم السري الحالي"),
+        "definition": MessageLookupByLibrary.simpleMessage("التعريف"),
         "deleteAccount": MessageLookupByLibrary.simpleMessage("حذف الحساب"),
         "doNotDisturbDescription": MessageLookupByLibrary.simpleMessage(
             "إخفاء دعوات اللعبة، ومشاركات غرفة الدردشة، وإشعارات الأصدقاء المتصلين"),
@@ -60,12 +64,16 @@ class MessageLookup extends MessageLookupByLibrary {
             "لا يمكنك ترك هذا الحقل فارغاً"),
         "enterReasonHere":
             MessageLookupByLibrary.simpleMessage("اكتب السبب هنا"),
+        "events": MessageLookupByLibrary.simpleMessage("الأحداث"),
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("هل نسيت الرقم السري؟"),
         "friendNotifications":
             MessageLookupByLibrary.simpleMessage("إشعارات الأصدقاء"),
+        "friends": MessageLookupByLibrary.simpleMessage("الأصدقاء"),
+        "game": MessageLookupByLibrary.simpleMessage("اللعبة"),
         "gameNotifications":
             MessageLookupByLibrary.simpleMessage("إشعارات الألعاب"),
+        "gifts": MessageLookupByLibrary.simpleMessage("الهدايا"),
         "hideBirthdayDescription": MessageLookupByLibrary.simpleMessage(
             "لا يستطيع الآخرون رؤية عيد ميلادك ولكن لا يزال بإمكانك تلقي هدايا عيد ميلاد من Zone"),
         "hideBirthdayTitle":
@@ -107,6 +115,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("سياسة الخصوصية"),
         "privacySettings":
             MessageLookupByLibrary.simpleMessage("إعدادات الخصوصية"),
+        "rank": MessageLookupByLibrary.simpleMessage("الترتيب"),
         "save": MessageLookupByLibrary.simpleMessage("حفظ"),
         "sebakAlmarahGame": MessageLookupByLibrary.simpleMessage("سباق المرح"),
         "selselatAlasila":
@@ -119,8 +128,16 @@ class MessageLookup extends MessageLookupByLibrary {
         "stopFriendRequestsTitle":
             MessageLookupByLibrary.simpleMessage("إيقاف طلبات الصداقة"),
         "store": MessageLookupByLibrary.simpleMessage("المتجر"),
+        "subscriptions": MessageLookupByLibrary.simpleMessage("الاشتراكات"),
+        "superLevel": MessageLookupByLibrary.simpleMessage("مستوى سوبر"),
+        "superName": MessageLookupByLibrary.simpleMessage("سوبر"),
+        "tasks": MessageLookupByLibrary.simpleMessage("المهام"),
         "termsAndConditions":
             MessageLookupByLibrary.simpleMessage("الشروط والأحكام"),
+        "total": MessageLookupByLibrary.simpleMessage("المجموع"),
+        "totalWinProbability":
+            MessageLookupByLibrary.simpleMessage("احتمال الفوز"),
+        "wallet": MessageLookupByLibrary.simpleMessage("المحفظة"),
         "walletNotifications":
             MessageLookupByLibrary.simpleMessage("إشعارات المحفظة"),
         "whyYouDeleteAccount":

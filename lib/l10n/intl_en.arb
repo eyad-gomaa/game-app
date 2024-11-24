@@ -66,8 +66,24 @@
     "chatNotifications": "Chat Notifications",
     "messageNotifications": "Message Notifications",
     "yourInviteCode": "Your Invite Code",
-    "myAccount": "My Account"
-
+    "myAccount": "My Account",
+    "definition": "Definition",
+        "wallet": "Wallet",
+        "balance": "Balance",
+        "game": "Game",
+        "total": "Total",
+        "totalWinProbability": "Total Win Probability",
+        "subscriptions": "Subscriptions",
+        "friends": "Friends",
+        "events": "Events",
+        "achievements": "Achievements",
+        "tasks": "Tasks",
+        "badges": "Badges",
+        "rank": "Rank",
+        "superName": "Super",
+        "superLevel": "Super Level",
+        "gifts": "Gifts"
+    
 
 
 

@@ -11,8 +11,14 @@ class TextStyleManager {
   // ================ Test Style 10 ================
   static TextStyle style10RegWhite = TextStyle(
     fontFamily: Keys.bukraFont,
-    fontSize: adaptiveFontSize(12),
+    fontSize: adaptiveFontSize(10),
     fontWeight: FontWeight.w400,
+    color: ColorManager.white,
+  );
+  static TextStyle style10BoldWhite = TextStyle(
+    fontFamily: Keys.bukraFont,
+    fontSize: adaptiveFontSize(10),
+    fontWeight: FontWeight.w700,
     color: ColorManager.white,
   );
   static TextStyle style10BoldDarkPurple = TextStyle(
@@ -55,11 +61,23 @@ class TextStyleManager {
     color: const Color(0xff292724),
   );
   // ================ Test Style 14 ================
+  static TextStyle style14RegLightBlack = TextStyle(
+    fontFamily: Keys.bukraFont,
+    fontSize: adaptiveFontSize(14),
+    fontWeight: FontWeight.w400,
+    color: ColorManager.lightBlack,
+  );
   static TextStyle style14RegBlack = TextStyle(
     fontFamily: Keys.bukraFont,
     fontSize: adaptiveFontSize(14),
     fontWeight: FontWeight.w400,
-    color: const Color(0xff292724),
+    color: ColorManager.black,
+  );
+  static TextStyle style14RegWhite = TextStyle(
+    fontFamily: Keys.bukraFont,
+    fontSize: adaptiveFontSize(14),
+    fontWeight: FontWeight.w400,
+    color: ColorManager.white,
   );
   static TextStyle style14BoldWhite = TextStyle(
     fontFamily: Keys.bukraFont,
@@ -80,6 +98,12 @@ class TextStyleManager {
     fontSize: adaptiveFontSize(16),
     fontWeight: FontWeight.w700,
     color: ColorManager.black,
+  );
+  static TextStyle style16BoldLightBlack = TextStyle(
+    fontFamily: Keys.bukraFont,
+    fontSize: adaptiveFontSize(16),
+    fontWeight: FontWeight.w700,
+    color: ColorManager.lightBlack,
   );
   static TextStyle style16RegBrown = TextStyle(
     fontFamily: Keys.bukraFont,

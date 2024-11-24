@@ -729,6 +729,166 @@ class S {
       args: [],
     );
   }
+
+  /// `Definition`
+  String get definition {
+    return Intl.message(
+      'Definition',
+      name: 'definition',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Wallet`
+  String get wallet {
+    return Intl.message(
+      'Wallet',
+      name: 'wallet',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Balance`
+  String get balance {
+    return Intl.message(
+      'Balance',
+      name: 'balance',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Game`
+  String get game {
+    return Intl.message(
+      'Game',
+      name: 'game',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Total`
+  String get total {
+    return Intl.message(
+      'Total',
+      name: 'total',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Total Win Probability`
+  String get totalWinProbability {
+    return Intl.message(
+      'Total Win Probability',
+      name: 'totalWinProbability',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Subscriptions`
+  String get subscriptions {
+    return Intl.message(
+      'Subscriptions',
+      name: 'subscriptions',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Friends`
+  String get friends {
+    return Intl.message(
+      'Friends',
+      name: 'friends',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Events`
+  String get events {
+    return Intl.message(
+      'Events',
+      name: 'events',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Achievements`
+  String get achievements {
+    return Intl.message(
+      'Achievements',
+      name: 'achievements',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Tasks`
+  String get tasks {
+    return Intl.message(
+      'Tasks',
+      name: 'tasks',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Badges`
+  String get badges {
+    return Intl.message(
+      'Badges',
+      name: 'badges',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Rank`
+  String get rank {
+    return Intl.message(
+      'Rank',
+      name: 'rank',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Super`
+  String get superName {
+    return Intl.message(
+      'Super',
+      name: 'superName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Super Level`
+  String get superLevel {
+    return Intl.message(
+      'Super Level',
+      name: 'superLevel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Gifts`
+  String get gifts {
+    return Intl.message(
+      'Gifts',
+      name: 'gifts',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
