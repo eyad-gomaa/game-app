@@ -10,7 +10,8 @@ class WhiteOpacityField extends StatefulWidget {
     this.hint,
     this.prefixIcon,
     this.isPassword,
-    this.validation = false, required this.controller,
+    this.validation = false,
+    required this.controller,
   });
   final String? hint;
   final Widget? prefixIcon;

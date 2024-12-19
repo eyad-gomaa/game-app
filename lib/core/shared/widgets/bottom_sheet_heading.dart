@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:zone_game_app/core/shared/animations/repeating_scale_animation.dart';
 import 'package:zone_game_app/core/shared/widgets/bottom_sheet_title.dart';
-import 'package:zone_game_app/core/shared/widgets/icons/close_icon.dart';
-import 'package:zone_game_app/core/shared/widgets/inner_shadow.dart';
+import 'package:zone_game_app/core/shared/widgets/buttons/close_button.dart';
+import 'package:zone_game_app/core/utils/extensions/context_extension.dart';
 import 'package:zone_game_app/core/utils/managers/assets_manager/image_manager.dart';
-import 'package:zone_game_app/core/utils/managers/color_manager/color_manager.dart';
 
 class BottomSheetHeading extends StatelessWidget {
   const BottomSheetHeading({
@@ -21,63 +19,63 @@ class BottomSheetHeading extends StatelessWidget {
   Widget build(BuildContext context) {
     double screenHeight = MediaQuery.sizeOf(context).height;
     double titleContainerHeight = screenHeight * 0.15;
-    double iconHeight = titleContainerHeight * 0.4;
     return SizedBox(
       height: titleContainerHeight,
       child: Stack(
         alignment: Alignment.center,
         children: [
-          SvgPicture.asset(ImageManager.buyBackgroundLayer,
-              fit: BoxFit.fill, width: MediaQuery.sizeOf(context).width),
-          Positioned(
-            left: 0,
-            bottom: 0,
-            child: SvgPicture.asset(
-              ImageManager.leftBuyLayer,
-              height: screenHeight * 0.1,
-            ),
+          Align(
+            alignment: Alignment.topCenter,
+            child: Image.asset(ImageManager.sheetHeading,
+                fit: BoxFit.fill, width: MediaQuery.sizeOf(context).width),
           ),
+          // SvgPicture.asset(ImageManager.buyBackgroundLayer,
+          //     fit: BoxFit.fill, width: MediaQuery.sizeOf(context).width),
+          // Positioned(
+          //   left: 0,
+          //   bottom: 0,
+          //   child: SvgPicture.asset(
+          //     ImageManager.leftBuyLayer,
+          //     height: screenHeight * 0.1,
+          //   ),
+          // ),
+          // Positioned(
+          //   right: 0,
+          //   top: 0,
+          //   child: InnerShadow(
+          //     shadows: [
+          //       Shadow(
+          //         color: ColorManager.black.withOpacity(0.2),
+          //         blurRadius: 5,
+          //         offset: const Offset(2, 2),
+          //       ),
+          //     ],
+          //     child: SvgPicture.asset(
+          //       ImageManager.rightBuyLayer,
+          //       height: screenHeight * 0.13,
+          //     ),
+          //   ),
+          // ),
           Positioned(
-            right: 0,
-            top: 0,
-            child: InnerShadow(
-              shadows: [
-                Shadow(
-                  color: ColorManager.black.withOpacity(0.2),
-                  blurRadius: 5,
-                  offset: const Offset(2, 2),
-                ),
-              ],
-              child: SvgPicture.asset(
-                ImageManager.rightBuyLayer,
-                height: screenHeight * 0.13,
-              ),
-            ),
-          ),
-          Positioned(
-            right: iconHeight * 0.5,
-            bottom: 30,
+            right: 52,
+            bottom: context.responsiveHeight(40),
             child: RepeatingScaleAnimation(
-              child: Image.asset(
-                ImageManager.diamondLayer,
-                height: iconHeight,
-              ),
+              child: Image.asset(ImageManager.diamondLayer,
+                  height: context.responsiveHeight(55)),
             ),
           ),
           Positioned(
-            left: iconHeight / 3,
-            top: iconHeight / 4,
+            left: context.responsiveWidth(10),
+            top: context.responsiveHeight(10),
             child: RepeatingScaleAnimation(
-              child: Image.asset(
-                leftIcon ?? ImageManager.settingsLayer,
-                height: iconHeight * 1.7,
-              ),
+              child: Image.asset(leftIcon ?? ImageManager.settingsLayer,
+                  height: context.responsiveHeight(77)),
             ),
           ),
           const Positioned(
             right: 20,
             top: 20,
-            child: CloseIcon(),
+            child: CustomCloseButton(),
           ),
           BottomSheetTitle(
             title: title,

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:zone_game_app/core/utils/extensions/context_extension.dart';
 import 'package:zone_game_app/core/utils/managers/assets_manager/icon_manager.dart';
 
 class NotificationsIcon extends StatelessWidget {
@@ -15,7 +15,7 @@ class NotificationsIcon extends StatelessWidget {
         onTap: () {},
         child: SvgPicture.asset(
           IconManager.bill,
-          height: 35.w,
+          height: context.responsiveHeight(32),
         ));
   }
 }

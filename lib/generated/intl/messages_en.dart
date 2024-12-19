@@ -137,8 +137,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "termsAndConditions":
             MessageLookupByLibrary.simpleMessage("Terms and Conditions"),
         "total": MessageLookupByLibrary.simpleMessage("Total"),
+        "totalBalance": MessageLookupByLibrary.simpleMessage("Total balance"),
         "totalWinProbability":
-            MessageLookupByLibrary.simpleMessage("Total Win Probability"),
+            MessageLookupByLibrary.simpleMessage("Total Wins"),
         "wallet": MessageLookupByLibrary.simpleMessage("Wallet"),
         "walletNotifications":
             MessageLookupByLibrary.simpleMessage("Wallet Notifications"),

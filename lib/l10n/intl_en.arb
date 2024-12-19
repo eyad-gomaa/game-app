@@ -72,7 +72,7 @@
         "balance": "Balance",
         "game": "Game",
         "total": "Total",
-        "totalWinProbability": "Total Win Probability",
+        "totalWinProbability": "Total Wins",
         "subscriptions": "Subscriptions",
         "friends": "Friends",
         "events": "Events",
@@ -82,7 +82,8 @@
         "rank": "Rank",
         "superName": "Super",
         "superLevel": "Super Level",
-        "gifts": "Gifts"
+        "gifts": "Gifts",
+        "totalBalance": "Total balance"
     
 
 

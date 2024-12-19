@@ -9,8 +9,15 @@ class BlueButton extends StatelessWidget {
   const BlueButton({
     super.key,
     required this.onTap,
+    this.text,
+    this.width,
+    this.height,
   });
   final void Function() onTap;
+  final String? text;
+  final double? width;
+  final double? height;
+
   @override
   Widget build(BuildContext context) {
     return ScaleOnTap(
@@ -31,8 +38,8 @@ class BlueButton extends StatelessWidget {
         child: ClipRRect(
           borderRadius: BorderRadius.circular(10.r),
           child: Container(
-            height: MediaQuery.sizeOf(context).height * 0.05,
-            width: MediaQuery.of(context).size.width,
+            height: height ?? MediaQuery.sizeOf(context).height * 0.05,
+            width: width ?? MediaQuery.of(context).size.width,
             decoration: BoxDecoration(
               color: ColorManager.blue,
               boxShadow: [
@@ -46,7 +53,7 @@ class BlueButton extends StatelessWidget {
             ),
             child: Center(
               child: Text(
-                "شراء",
+                text ?? "شراء",
                 style: TextStyleManager.style16BoldWhite.copyWith(shadows: [
                   Shadow(
                     color: ColorManager.black.withOpacity(0.25),

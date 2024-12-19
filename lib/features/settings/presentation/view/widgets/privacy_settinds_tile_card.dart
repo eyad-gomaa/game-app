@@ -27,7 +27,6 @@ class _PrivacySettingTileCardState extends State<PrivacySettingTileCard> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      
       width: MediaQuery.sizeOf(context).width,
       padding: EdgeInsets.symmetric(horizontal: 18.w, vertical: 16.w),
       margin: EdgeInsets.symmetric(vertical: 8.h),

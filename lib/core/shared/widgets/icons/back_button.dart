@@ -4,7 +4,6 @@ import 'package:zone_game_app/core/shared/widgets/scale_on_tap.dart';
 import 'package:zone_game_app/core/utils/localization/flip_widget.dart';
 import 'package:zone_game_app/core/utils/managers/assets_manager/icon_manager.dart';
 import 'package:zone_game_app/core/utils/navigation/navigation_context_extension.dart';
-import 'package:zone_game_app/features/profile/presentation/view/widgets/profile_view_body.dart';
 
 class BackIcon extends StatelessWidget {
   const BackIcon({

@@ -4,16 +4,29 @@ import 'package:zone_game_app/core/constants/keys.dart';
 import 'package:zone_game_app/core/utils/managers/color_manager/color_manager.dart';
 
 class TextStyleManager {
-    static double adaptiveFontSize(double size) {
+  static double adaptiveFontSize(double size) {
     double scaleFactor = ScreenUtil().screenWidth > 600 ? 0.6 : 1.0;
     return (size * scaleFactor).sp;
   }
+
   // ================ Test Style 10 ================
   static TextStyle style10RegWhite = TextStyle(
     fontFamily: Keys.bukraFont,
     fontSize: adaptiveFontSize(10),
     fontWeight: FontWeight.w400,
     color: ColorManager.white,
+  );
+  static TextStyle style10RegBlack = TextStyle(
+    fontFamily: Keys.bukraFont,
+    fontSize: adaptiveFontSize(10),
+    fontWeight: FontWeight.w400,
+    color: ColorManager.lightBlack,
+  );
+  static TextStyle style10ReglightBlue = TextStyle(
+    fontFamily: Keys.bukraFont,
+    fontSize: adaptiveFontSize(10),
+    fontWeight: FontWeight.w400,
+    color: ColorManager.babyBlue,
   );
   static TextStyle style10BoldWhite = TextStyle(
     fontFamily: Keys.bukraFont,
@@ -54,6 +67,12 @@ class TextStyleManager {
     fontWeight: FontWeight.w400,
     color: ColorManager.black,
   );
+  static TextStyle style12BoldBlack = TextStyle(
+    fontFamily: Keys.bukraFont,
+    fontSize: adaptiveFontSize(12),
+    fontWeight: FontWeight.w700,
+    color: ColorManager.black,
+  );
   static TextStyle style12RegDeepGrey = TextStyle(
     fontFamily: Keys.bukraFont,
     fontSize: adaptiveFontSize(12),
@@ -84,6 +103,12 @@ class TextStyleManager {
     fontSize: adaptiveFontSize(14),
     fontWeight: FontWeight.w700,
     color: ColorManager.white,
+  );
+  static TextStyle style14BoldBlack = TextStyle(
+    fontFamily: Keys.bukraFont,
+    fontSize: adaptiveFontSize(14),
+    fontWeight: FontWeight.w700,
+    color: ColorManager.black,
   );
   // ================ Test Style 16 ================
 
@@ -180,9 +205,9 @@ class TextStyleManager {
     color: ColorManager.white,
   );
   // ================ Test Style 20 ================
-    static TextStyle style20RegLightBlack = TextStyle(
+  static TextStyle style20RegLightBlack = TextStyle(
     fontFamily: Keys.bukraFont,
-    fontSize:adaptiveFontSize(20),
+    fontSize: adaptiveFontSize(20),
     fontWeight: FontWeight.w400,
     color: ColorManager.lightBlack,
   );
@@ -214,7 +239,7 @@ class TextStyleManager {
   );
   static TextStyle style29BoldBlack = TextStyle(
     fontFamily: Keys.bukraFont,
-    fontSize:adaptiveFontSize(29),
+    fontSize: adaptiveFontSize(29),
     fontWeight: FontWeight.w700,
     color: ColorManager.black,
   );

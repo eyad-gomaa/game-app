@@ -51,7 +51,6 @@ class _ScaleOnTapState extends State<ScaleOnTap>
   Widget build(BuildContext context) {
     return GestureDetector(
       behavior: HitTestBehavior.translucent, // Allow taps to pass through
-
       onTap: () {
         _handleTap();
         widget.onTap!();

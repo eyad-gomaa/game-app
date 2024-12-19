@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:zone_game_app/core/utils/managers/color_manager/color_manager.dart';
 import 'package:zone_game_app/core/utils/managers/style_manager/text_style_manager.dart';
 import 'package:zone_game_app/generated/l10n.dart';
+
 class LightBlueField extends StatelessWidget {
   const LightBlueField({
     super.key,

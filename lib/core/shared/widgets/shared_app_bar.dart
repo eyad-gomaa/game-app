@@ -6,9 +6,11 @@ import 'package:zone_game_app/core/utils/managers/style_manager/text_style_manag
 
 class SharedAppBar extends StatelessWidget {
   const SharedAppBar({
-    super.key, required this.title,
+    super.key,
+    required this.title,
   });
   final String title;
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -16,13 +18,11 @@ class SharedAppBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          SizedBox(
-              width: MediaQuery.sizeOf(context).width / 3 - 20,
-              child: const Align(
+          const Expanded(
+              child: Align(
                   alignment: AlignmentDirectional.centerStart,
                   child: BackIcon())),
-          SizedBox(
-            width: MediaQuery.sizeOf(context).width / 3,
+          Expanded(
             child: Align(
               alignment: Alignment.center,
               child: Text(
@@ -31,9 +31,7 @@ class SharedAppBar extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
-              width: MediaQuery.sizeOf(context).width / 3 - 20,
-              child: const SettingsAndNotifications()),
+          const Expanded(child: SettingsAndNotifications()),
         ],
       ),
     );

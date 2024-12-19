@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:zone_game_app/features/home/presentation/view/widgets/home_banners.dart';
@@ -11,36 +10,17 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
-      child: SingleChildScrollView(
-        child: Column(
-          children: [
-            HomeUserInfo(),
-            Gap(16),
-            HomeBanners(),
-            HomeTextSlider(),
-            HomeGames(),
-            Gap(20),
-          ],
-        ),
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          HomeUserInfo(),
+          Gap(16),
+          HomeBanners(),
+          HomeTextSlider(),
+          HomeGames(),
+          Gap(20),
+        ],
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

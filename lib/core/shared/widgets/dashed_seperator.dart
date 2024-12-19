@@ -1,10 +1,10 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:zone_game_app/core/utils/managers/color_manager/color_manager.dart';
 
 class DashedSeperator extends StatelessWidget {
-  const DashedSeperator({super.key, this.height = 1, this.color = ColorManager.grey});
+  const DashedSeperator(
+      {super.key, this.height = 1, this.color = ColorManager.grey});
   final double height;
   final Color color;
 

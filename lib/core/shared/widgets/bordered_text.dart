@@ -6,12 +6,15 @@ class BorderedText extends StatelessWidget {
     required this.text,
     this.borderColor,
     this.style,
+    this.stockWidth = 2,
   });
   final String text;
   final Color? borderColor;
   final TextStyle? style;
+  final double stockWidth;
   @override
   Widget build(BuildContext context) {
+    double letterSpacing = 0;
     return Stack(
       children: [
         // Implement the stroke
@@ -20,10 +23,10 @@ class BorderedText extends StatelessWidget {
           style: TextStyle(
             fontSize: style?.fontSize ?? 14,
             fontWeight: FontWeight.bold,
-            letterSpacing: 2,
+            letterSpacing: letterSpacing,
             foreground: Paint()
               ..style = PaintingStyle.stroke
-              ..strokeWidth = 2
+              ..strokeWidth = stockWidth
               ..color = borderColor ?? Colors.black,
           ),
         ),
@@ -31,11 +34,11 @@ class BorderedText extends StatelessWidget {
         Text(
           text,
           style: style?.copyWith(
-                letterSpacing: 2,
+                letterSpacing: letterSpacing,
               ) ??
-              const TextStyle(
+              TextStyle(
                 fontSize: 14,
-                letterSpacing: 2,
+                letterSpacing: letterSpacing,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
               ),

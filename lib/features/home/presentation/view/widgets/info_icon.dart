@@ -8,8 +8,9 @@ import 'package:zone_game_app/features/home/presentation/view/widgets/game_info_
 class InfoIcon extends StatelessWidget {
   const InfoIcon({
     super.key,
+    this.size,
   });
-
+  final double? size;
   @override
   Widget build(BuildContext context) {
     return ScaleOnTap(
@@ -21,7 +22,8 @@ class InfoIcon extends StatelessWidget {
       },
       child: SvgPicture.asset(
         IconManager.info,
-        fit: BoxFit.scaleDown,
+        height: size,
+        width: size,
       ),
     );
   }

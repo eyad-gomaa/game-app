@@ -52,7 +52,6 @@ class _DeleteAccountFormState extends State<DeleteAccountForm> {
               LightBlueField(
                 controller: _passwordController,
                 hint: names.password,
-                
               ),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 38.w, vertical: 24.w),

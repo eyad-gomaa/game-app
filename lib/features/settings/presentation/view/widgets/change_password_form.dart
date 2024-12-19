@@ -10,6 +10,7 @@ import 'package:zone_game_app/core/utils/managers/color_manager/color_manager.da
 import 'package:zone_game_app/core/utils/managers/style_manager/text_style_manager.dart';
 import 'package:zone_game_app/core/utils/navigation/navigation_context_extension.dart';
 import 'package:zone_game_app/generated/l10n.dart';
+
 class ChangePasswordForm extends StatefulWidget {
   const ChangePasswordForm({
     super.key,
@@ -20,20 +21,19 @@ class ChangePasswordForm extends StatefulWidget {
 }
 
 class _ChangePasswordFormState extends State<ChangePasswordForm> {
-  late GlobalKey<FormState> _formKey ;
-  late TextEditingController _currentPasswordController ;
-  late TextEditingController _newPasswordController ;
-  late TextEditingController _newPasswordConfirmController ;
-      @override
+  late GlobalKey<FormState> _formKey;
+  late TextEditingController _currentPasswordController;
+  late TextEditingController _newPasswordController;
+  late TextEditingController _newPasswordConfirmController;
+  @override
   void initState() {
-    _currentPasswordController =
-      TextEditingController();
-      _newPasswordController = TextEditingController();
-      _newPasswordConfirmController =
-      TextEditingController();
-      _formKey = GlobalKey<FormState>();
+    _currentPasswordController = TextEditingController();
+    _newPasswordController = TextEditingController();
+    _newPasswordConfirmController = TextEditingController();
+    _formKey = GlobalKey<FormState>();
     super.initState();
   }
+
   @override
   Widget build(BuildContext context) {
     S names = S.of(context);

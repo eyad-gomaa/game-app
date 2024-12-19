@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -7,6 +6,7 @@ import 'package:gap/gap.dart';
 import 'package:zone_game_app/core/utils/managers/assets_manager/icon_manager.dart';
 import 'package:zone_game_app/core/utils/managers/color_manager/color_gradient_manager.dart';
 import 'package:zone_game_app/core/utils/managers/style_manager/text_style_manager.dart';
+
 class HomeRankContainer extends StatelessWidget {
   const HomeRankContainer({
     super.key,

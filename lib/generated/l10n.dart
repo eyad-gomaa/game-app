@@ -780,10 +780,10 @@ class S {
     );
   }
 
-  /// `Total Win Probability`
+  /// `Total Wins`
   String get totalWinProbability {
     return Intl.message(
-      'Total Win Probability',
+      'Total Wins',
       name: 'totalWinProbability',
       desc: '',
       args: [],
@@ -885,6 +885,16 @@ class S {
     return Intl.message(
       'Gifts',
       name: 'gifts',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Total balance`
+  String get totalBalance {
+    return Intl.message(
+      'Total balance',
+      name: 'totalBalance',
       desc: '',
       args: [],
     );

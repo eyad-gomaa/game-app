@@ -19,7 +19,9 @@ class EditMyDataViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SharedAppBar(title: S.of(context).editMyData,),
+        SharedAppBar(
+          title: S.of(context).editMyData,
+        ),
         Expanded(
           child: SingleChildScrollView(
             child: Column(
@@ -52,9 +54,15 @@ class EditMyDataViewBody extends StatelessWidget {
                 ),
                 const Gap(8),
                 const SelectAvatarList(),
-                 WhiteOpacityField(controller: TextEditingController(),),
-                 WhiteOpacityField(controller: TextEditingController(),),
-                 WhiteOpacityField(controller: TextEditingController(),),
+                WhiteOpacityField(
+                  controller: TextEditingController(),
+                ),
+                WhiteOpacityField(
+                  controller: TextEditingController(),
+                ),
+                WhiteOpacityField(
+                  controller: TextEditingController(),
+                ),
                 const Gap(8),
                 InnerShadow(
                   shadows: [
@@ -93,5 +101,3 @@ class EditMyDataViewBody extends StatelessWidget {
     );
   }
 }
-
-

@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -10,13 +9,15 @@ import 'package:zone_game_app/core/utils/managers/assets_manager/image_manager.d
 import 'package:zone_game_app/core/utils/managers/style_manager/text_style_manager.dart';
 import 'package:zone_game_app/features/home/presentation/view/widgets/gradient_text_border.dart';
 import 'package:zone_game_app/features/home/presentation/view/widgets/info_icon.dart';
+
 class HomeGameCard extends StatelessWidget {
   const HomeGameCard({
     super.key,
     required this.text,
     required this.color,
     required this.image,
-    required this.anmimationDelay, required this.onTap,
+    required this.anmimationDelay,
+    required this.onTap,
   });
   final String text;
   final Color color;
@@ -26,7 +27,7 @@ class HomeGameCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScaleOnTap(
-          onTap: onTap,
+      onTap: onTap,
       child: Stack(
         children: [
           InnerShadow(
